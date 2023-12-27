@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:WpfApp1.Controls" xmlns:fa6="http://schemas.fontawesome.com/icons/svg" xmlns:system="clr-namespace:System;assembly=mscorlib" xmlns:wpflib="clr-namespace:WpfLib;assembly=WpfLib"
+             xmlns:local="clr-namespace:WpfApp1.Controls" xmlns:fa6="http://schemas.fontawesome.com/icons/svg" xmlns:system="clr-namespace:System;assembly=mscorlib" xmlns:wpflib="clr-namespace:WpfLib;assembly=WpfLib" xmlns:controls="clr-namespace:WpfLib.Controls;assembly=WpfLib"
              mc:Ignorable="d" 
              d:DesignHeight="550" d:DesignWidth="350"
              Background="{StaticResource ColorPrimary}">
@@ -36,7 +36,12 @@
                                    WaterMarkText="이메일을 입력하세요"
                                    Validating="True"/>
             <!--<ComboBox Height="{StaticResource ElementHeight}"/>-->
-            <PasswordBox Height="{StaticResource ElementHeight}"/>
+            <controls:PasswordBoxControl 
+                Background="White"
+                WaterMarkText="비밀번호를 입력하세요."
+                WaterMarkTextColor="Red"
+                Password=""
+                Height="{StaticResource ElementHeight}"/>
             <Button Content="로그인" 
                     Height="{StaticResource ElementHeight}"
                     Margin="0 10 0 0"/>
