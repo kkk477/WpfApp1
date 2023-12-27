@@ -31,10 +31,11 @@
         <!--Body-->
         <StackPanel Grid.Row="1"
                     Margin="30 10">
-            <wpflib:TextBoxControl Background="White"
-                                   Height="35"
-                                   WaterMarkText="이메일을 입력하세요"
-                                   Validating="True"/>
+            <controls:ComboBoxControl Background="White"
+                                      Height="35"
+                                      WaterMarkText="이메일을 입력하세요."
+                                      WaterMarkTextColor="Blue"
+                                      BorderBrush="Red"/>
             <!--<ComboBox Height="{StaticResource ElementHeight}"/>-->
             <controls:PasswordBoxControl 
                 Background="White"
